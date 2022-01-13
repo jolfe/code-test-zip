@@ -5,7 +5,6 @@ const options = {
   headers: {
     Accept: "application/json",
   },
-  mode: "cors",
   cache: "default",
 };
 
