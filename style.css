@@ -1,0 +1,114 @@
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #a15110d4;
+  color: black;
+  width: 100vw;
+  height: 100vh;
+  font-family: monospace;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container {
+  width: 600px;
+  padding: 30px;
+  display: flex;
+  flex: 1 1 50%;
+  background: #ffffffc7;
+  margin: auto;
+  position: relative;
+  flex-direction: column;
+  top: calc(50vh - 300px);
+  border-radius: 10px;
+  border: 1px solid rgba(200, 133, 10, 0.466);
+  -webkit-box-shadow: 0px 0px 69px 0px rgba(79, 79, 79, 1);
+  -moz-box-shadow: 0px 0px 69px 0px rgba(79, 79, 79, 1);
+  box-shadow: 0px 0px 69px 0px rgba(79, 79, 79, 1);
+}
+
+label {
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  margin-top: 15px;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-align: center;
+}
+
+#map {
+  width: 380px;
+  margin: auto;
+  transform: translateY(20px);
+  padding: 20px;
+  height: 300px;
+  fill: red !important;
+  border-radius: 10px;
+}
+
+div {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+div span {
+  padding-left: 10px;
+  color: rgb(156, 89, 0);
+}
+
+.btn {
+  background: rgb(221, 126, 3);
+  color: white;
+  border-radius: 5px;
+  width: 30%;
+  padding: 5px;
+  border: 2px solid rgb(221, 126, 3);
+}
+
+.btn:hover {
+  background: rgb(161, 92, 1);
+  color: white;
+  border-radius: 5px;
+  width: 30%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+input {
+  font-size: large;
+  margin: 0 10px;
+  border-radius: 5px;
+  padding-left: 5px;
+  border: 1px solid !important;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+#result {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+}
+
+#result .span {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}

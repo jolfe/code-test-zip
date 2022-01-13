@@ -1,15 +1,39 @@
-<!doctype html>
-<head>
-	<meta charset="utf-8">
-	<title>Zip Code</title>
-	<meta name="description" content="A frontend dev aptitude test by Deep Space Robots.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	
-	<script src="script.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zip Code</title>
+    <meta
+      name="description"
+      content="A frontend dev aptitude test by Deep Space Robots."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>ZIP CODE FINDER</h2>
+      <form action="javascript:handleClick()" method="post">
+        <label for="zip">Zip Code:</label>
+        <input type="text" name="zip" id="zip" required />
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+      <div id="result" style="display: none">
+        <div id="state" class="state">State: <span id="state-name"></span></div>
+        <div id="city">City: <span id="city-name"></span></div>
+        <div id="lat">Latitude: <span id="lat-name"></span></div>
+        <div id="long">Longitude: <span id="long-name"></span></div>
+        <div id="country">Country: <span id="country-name"></span></div>
+        <div id="countryAb">
+          Country Abbreviation: <span id="country-ab"></span>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
 
+    <script src="script.js" type="text/javascript">
+      handleClick();
+    </script>
+  </body>
+</html>
